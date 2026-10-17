@@ -1,0 +1,39 @@
+libraires used: 
+import rich 
+from rich.console import Console
+from rich import table
+from rich.panel import Panel
+import pyfiglet
+from art import text2art
+from rich.align import Align
+from rich.prompt import Prompt
+import questionary
+from questionary import Style
+import random
+
+begging system:
+creation: using if elif else, and random py inbuilt library 
+
+item odd:
+One cents 55 %
+Two cents 34%
+Three cents 2%
+Four cents 2%
+peice of bread 7%
+
+inventory system: using list []
+money system : []
+
+colour scheme:
+Freaky : 715EFF
+Fruit shop owner : orange
+Narrator : pure white
+Neutral ( scene , intro ): E6E6E6 
+Dialogues : FFFF00
+
+future plans: 
+
+after scene 5, addition of sound and input enter() function 
+
+
+publish: after scene 10
