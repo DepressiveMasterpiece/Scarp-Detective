@@ -148,3 +148,4 @@ console.print(
     """[#715EFF]Freaky :[/#715EFF] [#FFFF00]hmm... I think this all started because of that old drunk head if he hadn't made me run, i wouldn't be sleeping on roadside in front of that fruit shop and got beaten by that fat man it's all that old man's fault, well when I found that place  underneath the bridge I was so happy, I spent two weeks of peaceful nights there and then one day suddenly that old man came and said that this place belonged to him and I should get out of his place and forcefully took my watch and my hat and then beaten me till I ran away from there...
     Hm.. yeah I guess maybe that place was really his and while he was gone I came there and thought tha- ... That I finally found a home a real home... Hm nevermind but still he stole my watch and hat and I have to take them back but later, currently I have to think about food[/#FFFF00]"""
 )
+# start of scene 5
