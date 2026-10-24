@@ -1,13 +1,6 @@
-import rich
 from rich.console import Console
-from rich import table
 from rich.panel import Panel
-import pyfiglet
-from art import text2art
 from rich.align import Align
-from rich.prompt import Prompt
-import questionary
-from questionary import Style
 import random
 
 console = Console()
