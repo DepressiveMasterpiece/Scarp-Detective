@@ -1,5 +1,4 @@
-import micropip
-await micropip.install("rich")
+
 
 from rich.console import Console
 from rich.panel import Panel

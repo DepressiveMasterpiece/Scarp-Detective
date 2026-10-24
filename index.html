@@ -21,7 +21,16 @@
 </head>
 <body>
 
-    <!-- Interactive Terminal runs your Python script directly -->
+    <!-- PyScript TOML Configuration -->
+    <script type="config">
+        packages = ["rich"]
+        
+        [[files]]
+        src = "./scrap_detective1.py"
+        dest = "./scrap_detective1.py"
+    </script>
+
+    <!-- Interactive Terminal -->
     <script type="py" terminal src="./scrap_detective1.py"></script>
 
 </body>
