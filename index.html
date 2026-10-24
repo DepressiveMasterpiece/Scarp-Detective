@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Python Terminal App</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Scrap Detective Terminal</title>
                 
- <!-- PyScript CSS & JS -->
-<link rel="stylesheet" href="https://pyscript.net/releases/2024.4.1/core.css">
-<script type="module" src="https://pyscript.net/releases/2024.4.1/core.js"></script>
-</head>
-<body>
+                    <!-- Latest Stable PyScript -->
+                        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+                            <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
-<!-- Configuration for pure-Python packages -->
-<py-config>
-packages = ["rich", "pyfiglet", "art", "questionary"]
-[[files]]
-src = "./scrap_detective1.py"
-dest = "./scrap_detective1.py"
-</py-config>
+                                <style>
+                                        body {
+                                                    background-color: #0d1117;
+                                                                color: #c9d1d9;
+                                                                            margin: 0;
+                                                                                        padding: 10px;
+                                                                                                    font-family: monospace;
+                                                                                                            }
+                                                                                                                </style>
+                                                                                                                </head>
+                                                                                                                <body>
 
- <!-- Interactive WebAssembly Terminal -->
-<py-script terminal src="./scrap_detective1.py"></py-script>
+                                                                                                                    <!-- Package and File Configuration -->
+                                                                                                                        <script type="py" config>
+                                                                                                                                packages = ["rich", "pyfiglet", "art", "questionary"]
+                                                                                                                                        [[files]]
+                                                                                                                                                src = "./scrap_detective1.py"
+                                                                                                                                                        dest = "./scrap_detective1.py"
+                                                                                                                                                            </script>
 
-</body>
-</html>
+                                                                                                                                                                <!-- Interactive Terminal -->
+                                                                                                                                                                    <script type="py" terminal src="./scrap_detective1.py"></script>
+
+                                                                                                                                                                    </body>
+                                                                                                                                                                    </html>
+                                                                                                                                                                    
