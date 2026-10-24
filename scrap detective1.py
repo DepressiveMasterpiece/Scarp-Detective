@@ -10,10 +10,13 @@ import questionary
 from questionary import Style
 import random
 
+console = Console()
+
+
 inventory = []
 money = [0]
 
-console = Console()
+
 def dim():
     console.print(
         "[dim]Press enter to continue...[/dim]"

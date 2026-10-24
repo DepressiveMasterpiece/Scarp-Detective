@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Terminal App</title>
+                
+ <!-- PyScript CSS & JS -->
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.4.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.4.1/core.js"></script>
+</head>
+<body>
+
+<!-- Configuration for pure-Python packages -->
+<py-config>
+packages = ["rich", "pyfiglet", "art", "questionary"]
+[[files]]
+src = "./scrap_detective1.py"
+dest = "./scrap_detective1.py"
+</py-config>
+
+ <!-- Interactive WebAssembly Terminal -->
+<py-script terminal src="./scrap_detective1.py"></py-script>
+
+</body>
+</html>
