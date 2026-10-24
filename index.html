@@ -6,8 +6,8 @@
     <title>Scrap Detective Terminal</title>
     
     <!-- PyScript CSS & JS -->
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.4.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.4.1/core.js"></script>
 
     <style>
         body {
@@ -21,17 +21,7 @@
 </head>
 <body>
 
-    <!-- JSON Config block safely loads packages and files -->
-    <script type="config">
-    {
-      "packages": ["rich"],
-      "files": {
-        "./scrap_detective1.py": "./scrap_detective1.py"
-      }
-    }
-    </script>
-
-    <!-- Interactive Terminal -->
+    <!-- Interactive Terminal runs your Python script directly -->
     <script type="py" terminal src="./scrap_detective1.py"></script>
 
 </body>
