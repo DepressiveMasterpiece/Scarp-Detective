@@ -5,10 +5,6 @@ from rich.align import Align
 import random
 time.sleep(1.5)
 console = Console()
-console.clear()
-console.print("[bold cyan]=== SCRAP DETECTIVE ===[/bold cyan]\n", justify="center")
-input("[dim]Press Enter to start[/dim]")
-console.clear()
 
 time.sleep(1)
 
