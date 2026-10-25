@@ -3,7 +3,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.align import Align
 import random
-
+time.sleep(1.5)
 console = Console()
 console.clear()
 console.print("[bold cyan]=== SCRAP DETECTIVE ===[/bold cyan]\n", justify="center")
