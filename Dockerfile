@@ -15,5 +15,5 @@ ENV COLORTERM=truecolor
 ENV PYTHONUNBUFFERED=1
 
 EXPOSE 8080
-CMD ["ttyd", "-p", "8080", "-W", "-t", "fontSize=20", "-s", "24", "-w", "80", "tmux", "new", "-A", "-s", "game", "python", "-u", "scrap_detective1.py"]
+CMD ["ttyd", "-p", "8080", "-W", "-t", "fontSize=20", "tmux", "new", "-A", "-s", "game", "python", "-u", "scrap_detective1.py"]
 
