@@ -1,10 +1,13 @@
 
-
 from rich.console import Console
 from rich.panel import Panel
 from rich.align import Align
 import random
 
+console.clear()
+console.print("[bold cyan]=== SCRAP DETECTIVE ===[/bold cyan]\n", justify="center")
+input("Press Enter to start")
+console.clear()
 console = Console()
 
 
