@@ -4,11 +4,12 @@ from rich.panel import Panel
 from rich.align import Align
 import random
 
+console = Console()
 console.clear()
 console.print("[bold cyan]=== SCRAP DETECTIVE ===[/bold cyan]\n", justify="center")
-input("Press Enter to start")
+input("[dim]Press Enter to start[/dim]")
 console.clear()
-console = Console()
+
 
 
 inventory = []
