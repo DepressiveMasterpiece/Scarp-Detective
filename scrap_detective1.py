@@ -10,7 +10,7 @@ console.print("[bold cyan]=== SCRAP DETECTIVE ===[/bold cyan]\n", justify="cente
 input("[dim]Press Enter to start[/dim]")
 console.clear()
 
-
+time.sleep(1)
 
 inventory = []
 money = [0]
