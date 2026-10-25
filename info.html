@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms, Privacy Policy & Information</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Rancho&display=swap');
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #C4A484;
+      padding: 16px;
+    }
+
+    .protest-guerrilla-regular {
+      font-family: "Protest Guerrilla", sans-serif;
+      text-align: center;
+      margin-top: 6vh;
+      color: #8B0000;
+    }
+
+    .rancho-regular {
+      font-family: "Rancho", cursive;
+      font-weight: 400;
+      color: #333;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    h3 {
+      color: #111;
+      margin-top: 32px;
+    }
+
+    /* Floating Menu Icon */
+    .menu-icon {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #111;
+      z-index: 1000;
+      user-select: none;
+      background: none;
+      border: none;
+    }
+
+    /* Dropdown Menu */
+    .menu {
+      position: fixed;
+      top: 55px;
+      right: 15px;
+      background: #fff;
+      width: 220px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      display: none;
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 999;
+    }
+
+    .menu a {
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu a:hover {
+      background: #f2f2f2;
+    }
+
+    /* Contact Section */
+    .contact-box {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu Icon -->
+  <button class="menu-icon" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
+
+  <!-- Dropdown Menu -->
+  <div id="menu" class="menu">
+    <a href="feedback-and-preregistration.html">Feedback & Pre-Registration</a>
+    <a href="index.html">Home Page</a>
+    <a href="info.html">Contact Us & Information</a>
+  </div>
+
+  <h2 class="protest-guerrilla-regular">Terms and Conditions</h2>
+
+  <p class="rancho-regular"><b>Last Updated:</b> 1-2-2026</p>
+
+  <p class="rancho-regular">
+    Welcome to <b>THE LEGEND OF KR2</b>, a 2D story-driven role-playing adventure game developed in India by two independent developers. 
+    Set in the world of Rakuan, you follow the story of Rumpaul Blumpkin ("Freaky"). 
+    By downloading, installing, accessing, or playing this game, you agree to be bound by these Terms and Conditions.
+  </p>
+
+  <h3>Privacy Policy</h3>
+
+  <p class="rancho-regular"><b>1. Introduction</b><br>
+    This Privacy Policy explains how the game collects, uses, and protects user information while playing.
+  </p>
+
+  <p class="rancho-regular"><b>2. Information Collected</b><br>
+    The game may collect basic player details (username, age), device information (OS version, system performance), 
+    and story choices/save state data (e.g., morality alignments, inventory status, quest progress) to ensure seamless gameplay.
+  </p>
+
+  <p class="rancho-regular"><b>3. Use of Information</b><br>
+    Collected data is strictly used to process in-game achievements, maintain save files, improve game balancing, prevent save manipulation, and deliver updates.
+  </p>
+
+  <p class="rancho-regular"><b>4. Data Sharing</b><br>
+    We do not sell personal or gameplay information. Data is only processed locally or backed up via official platform services (e.g., Google Play Games or cloud saves).
+  </p>
+
+  <p class="rancho-regular"><b>5. Data Security</b><br>
+    Reasonable security measures are implemented to guard your game data. However, local save file modification is done at the player's own risk.
+  </p>
+
+  <p class="rancho-regular"><b>6. Children’s Privacy</b><br>
+    The game is intended for general audiences. Players below the age of consent must obtain parental permission before submitting pre-registration or feedback forms.
+  </p>
+
+  <p class="rancho-regular"><b>7. Changes to Privacy Policy</b><br>
+    Continued use of the game or website implies acceptance of any updated policies.
+  </p>
+
+  <h3>Disclaimer</h3>
+
+  <p class="rancho-regular">
+    <b>The Legend of KR2</b> is a fictional game set in the imaginary world of Rakuan. All characters, including Rumpaul Blumpkin ("Freaky"), events, and places are fictitious.
+  </p>
+
+  <p class="rancho-regular">
+    Player discretion is advised: the game deals with survival themes, poverty, character conflict, and dramatic narrative elements.
+  </p>
+
+  <p class="rancho-regular">
+    All intellectual property, artworks, music, and narrative scripts belong to Depressive Masterpiece. Unauthorized copying or redistribution is strictly prohibited.
+  </p>
+
+  <!-- Contact Us Section -->
+  <div class="contact-box">
+    <h3>Contact Us</h3>
+
+    <p class="rancho-regular">
+      <b>Developer Studio:</b> Depressive Masterpiece
+    </p>
+
+    <p class="rancho-regular">
+      <b>Email:</b>
+      <a href="mailto:DepressiveMasterpiece@gmail.com">
+        DepressiveMasterpiece@gmail.com
+      </a>
+    </p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display =
+        menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
+

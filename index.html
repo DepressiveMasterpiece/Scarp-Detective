@@ -31,15 +31,17 @@
     ul {
       list-style-type: square;
       margin-left: 5vw;
+      margin-right: 5vw;
       line-height: 1.6;
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 18px;
     }
 
     b {
-      color: #333;
+      color: #222;
     }
 
     /* Floating Menu Icon */
@@ -52,6 +54,8 @@
       color: #111;
       z-index: 1000;
       user-select: none;
+      background: none;
+      border: none;
     }
 
     /* Dropdown Menu */
@@ -85,46 +89,46 @@
 <body>
 
   <!-- Menu Icon -->
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <button class="menu-icon" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
 
   <!-- Dropdown Menu -->
   <div id="menu" class="menu">
     <a href="feedback-and-preregistration.html">Feedback & Pre-Registration</a>
-    <a href="index.html">home page</a>
-    <a href="info.html">contract us and information</a>
+    <a href="index.html">Home Page</a>
+    <a href="info.html">Contact Us & Information</a>
   </div>
 
   <!-- Main Content -->
   <h1 class="protest-guerrilla-regular">THE LEGEND OF KR2</h1>
 
   <div class="rancho-regular">
-    <h3 style="margin-left: 2vh; color:#0D0D0D;">
-      <u>Core features of game:</u>
+    <h3 style="margin-left: 2vh; color:#0D0D0D; font-size: 24px;">
+      <u>Core Features of the Game:</u>
     </h3>
 
     <ul>
-      <li><b>Immersive Dystopian World:</b> Experience a gritty setting with over 50 unique moves.</li>
-      <li><b>Deep Character Interaction:</b> Engage with over 50 interactive NPCs.</li>
-      <li><b>Expansive Content:</b> 70 side quests and a 35-chapter main storyline.</li>
-      <li><b>Psychological Dark Adventure:</b> Brutal narrative with high-fidelity visuals.</li>
-      <li><b>Dynamic Choice System:</b> Six distinct outcomes based on your decisions.</li>
-      <li><b>Karma Mechanics:</b> Reputation system based on moral choices.</li>
-      <li><b>Advanced Crafting:</b> Build Melee, Ranged, and Alien weaponry.</li>
-      <li><b>Weapon Fusion:</b> Combine types to create devastating hybrids.</li>
-      <li><b>Hero Abilities:</b> Integrate weaponry with unlockable abilities.</li>
+      <li><b>Game Setting & Protagonist:</b> Set in the mysterious world of Rakuan, the game stars a 13-14-year-old orphan named Rumpaul Blumpkin, who goes by the nickname "Freaky".</li>
+      <li><b>Complex Character Traits:</b> Freaky is driven by selfish and greedy desires, yet possesses an underlying capacity for mercy and kindness.</li>
+      <li><b>Dramatic Opening Event:</b> Waking up after a stormy night, Freaky is beaten by an angry man and driven away from a local fruit shop.</li>
+      <li><b>Interactive Choice System:</b> Shape the story early on with choices as fundamental as deciding whether to look for fresh water or search for food.</li>
+      <li><b>Dynamic Begging Mechanic:</b> Attempt begging to earn quick coins—though repeated failures leave Freaky questioning his own appearance and worth.</li>
+      <li><b>Forgiveness & Moral Arc:</b> Reflecting on his struggles while resting under a bridge, Freaky faces the emotional choice to forgive the man who attacked him.</li>
+      <li><b>Personal Vendettas & Past Conflicts:</b> Track down an old drunk beggar who evicted Freaky from his previous shelter to reclaim his stolen watch and hat.</li>
+      <li><b>Adventurer Quest Selection:</b> Realizing begging is ineffective and manual labor is impossible due to his frail build, Freaky must take on low-paying adventurer quests to survive.</li>
+      <li><b>Multi-Dimensional Narrator Guidance:</b> Guided by an enigmatic, multi-dimensional narrator who introduces players to the secrets of Rakuan.</li>
     </ul>
   </div>
 
-  <h3 class="rancho-regular" style="margin-left: 2vh; color:#0D0D0D; text-decoration: underline;">
+  <h3 class="rancho-regular" style="margin-left: 2vh; color:#0D0D0D; text-decoration: underline; font-size: 24px;">
     Recent Announcement
   </h3>
 
-  <p class="rancho-regular" style="margin-left: 2vh;">
-    Social media platforms and website are now live
+  <p class="rancho-regular" style="margin-left: 2vh; font-size: 19px;">
+    Social media platforms and official website are now live!
   </p>
 
-  <p class="rancho-regular" style="margin-left: 2vh;">
-    Estimated release date of game is 1 June 2026
+  <p class="rancho-regular" style="margin-left: 2vh; font-size: 19px;">
+    Estimated release date of the game is 1 June 2026.
   </p>
 
   <!-- JavaScript -->
@@ -134,16 +138,7 @@
       menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
   </script>
-<div style="width: 100%; max-width: 800px; margin: 0 auto; text-align: center;">
-    <h2>Scrap Detective</h2>
-    <div style="position: relative; width: 100%; height: 600px; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-        <iframe src="https://detective.onrender.com" 
-                style="width: 100%; height: 100%; border: none;" 
-                allow="clipboard-write">
-        </iframe>
-    </div>
-</div>
 
 </body>
-</html>	
+</html>
 

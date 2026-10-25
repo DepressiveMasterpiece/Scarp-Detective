@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback & Pre-Registration</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Rancho&display=swap');
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #C4A484;
+      text-align: center;
+    }
+
+    /* Fonts */
+    .protest-guerrilla-regular {
+      font-family: "Protest Guerrilla", sans-serif;
+      margin-top: 8vh;
+      color: #8B0000;
+    }
+
+    .rancho-regular {
+      font-family: "Rancho", cursive;
+      font-weight: 400;
+      color: #676767;
+      font-size: 20px;
+    }
+
+    /* Toggle Button */
+    .toggle-btn {
+      margin: 20px auto;
+      padding: 12px 26px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      background: #8B0000;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #5e0000;
+    }
+
+    /* Form Container */
+    .form-container {
+      max-width: 720px;
+      margin: 20px auto;
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+
+    iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Menu Icon */
+    .menu-icon {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      font-size: 28px;
+      cursor: pointer;
+      z-index: 1000;
+      background: none;
+      border: none;
+      color: #111;
+    }
+
+    .menu {
+      position: fixed;
+      top: 55px;
+      right: 15px;
+      background: #fff;
+      width: 220px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      display: none;
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 999;
+    }
+
+    .menu a {
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu a:hover {
+      background: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu Icon -->
+  <button class="menu-icon" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
+
+  <!-- Dropdown Menu -->
+  <div id="menu" class="menu">
+    <a href="feedback-and-preregistration.html">Feedback & Pre-Registration</a>
+    <a href="index.html">Home Page</a>
+    <a href="info.html">Contact Us & Information</a>
+  </div>
+
+  <h2 class="protest-guerrilla-regular">Feedback</h2>
+
+  <!-- Toggle Button -->
+  <button class="toggle-btn" onclick="toggleForm()" id="formBtn">
+    Open Feedback Form
+  </button>
+
+  <!-- Form Container -->
+  <div id="formContainer" class="form-container">
+    <iframe
+      src="https://form.svhrt.com/697c111cf2645c740d6c73f2"
+      title="Feedback Form">
+    </iframe>
+  </div>
+
+  <h2 class="protest-guerrilla-regular">Pre-Register</h2>
+  <p class="rancho-regular">Pre-registration starts on 15 May</p>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display =
+        menu.style.display === "block" ? "none" : "block";
+    }
+
+    function toggleForm() {
+      const form = document.getElementById("formContainer");
+      const btn = document.getElementById("formBtn");
+
+      if (form.style.display === "block") {
+        form.style.display = "none";
+        btn.textContent = "Open Feedback Form";
+      } else {
+        form.style.display = "block";
+        btn.textContent = "Close Feedback Form";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
