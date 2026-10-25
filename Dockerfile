@@ -14,4 +14,4 @@ ENV TERM=xterm-256color
 ENV COLORTERM=truecolor
 
 EXPOSE 8080
-CMD ["ttyd", "-p", "8080", "-W", "env", "TERM=xterm-256color", "python", "scrap_detective1.py"]
+CMD ["ttyd", "-p", "8080", "-W", "-t", "fontSize=20", "env", "TERM=xterm-256color", "python", "scrap_detective1.py"]
