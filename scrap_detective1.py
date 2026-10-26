@@ -100,7 +100,7 @@ console.print(
     "[bold #715EFF] Freaky : [/bold #715EFF] [#FFFF00]Huff... Sob... Huff.. why sniff.. why he beat me like this sniff.. ah! Ugh! My leg still hurts, did i do crime or sin? I wasn't even sleeping outside sob.. Huff... his shop I was on the other side of the road sniff.. i will surely punish him in future ughh!! But what should I do now?"
 )
 dim()
-C1 = console.input("[#E6E6E6 on #FFFF00] 1. drink water[/#E6E6E6 on #FFFF00]\t\t[#E6E6E6 on #FFFF00] 2. eat food[/#E6E6E6 on #FFFF00]\t\t\t")
+C1 = console.input("[#FFFF00] 1. drink water[/#FFFF00]\n[#FFFF00] 2. eat food[#FFFF00]\t\t\t")
 
 if C1 == "1":
     console.print(
