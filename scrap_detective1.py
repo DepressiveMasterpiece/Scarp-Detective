@@ -68,11 +68,11 @@ console.print(
 )
 dim()
 console.print(
-    "[bold #715EFF]Freaky :[/bold #715EFF] [red]ahh!![/red] [#FFFF00]Who the hell are you[/#FFFF00] [red]ah![/red] [#FFFF00]Why are you beating me[/#FFFF00] [red]ah! ahh!![/red] [#FFFF00]What's my fault[/#FFFF00] [red]uhh!! ah![/red]"
+    "[bold #715EFF]Freaky :[/bold #715EFF] [red]ahh!![/red] [#E79700]Who the hell are you[/#E79700] [red]ah![/red] [#E79700]Why are you beating me[/#E79700] [red]ah! ahh!![/red] [#E79700]What's my fault[/#E79700] [red]uhh!! ah![/red]"
 )
 dim()
 console.print(
-    "[bold #FFA500]Fruit shop owner :[/bold #FFA500] [#FFFF00]run you disgusting shit, don't want to see a beggar scrap face in front of my fruit shop shop spreading diseases and negativity [/#FFFF00]"
+    "[bold #FFA500]Fruit shop owner :[/bold #FFA500] [#E79700]run you disgusting shit, don't want to see a beggar scrap face in front of my fruit shop shop spreading diseases and negativity [/#E79700]"
 )
 dim()
 console.print(
@@ -80,7 +80,7 @@ console.print(
 )
 dim()
 console.print(
-    "[#E6E6E6]then u ran away from there [/#E6E6E6]"
+    "[#E79700]then u ran away from there [/#E79700]"
 )
 dim()
 # scene 2 starts
@@ -97,17 +97,17 @@ console.print(scene2a)
 console.print("[#E6E6E6] After running for a while freaky, you now arrived at the old bridge and while huffing and crying you said [#E6E6E6]")
 dim()
 console.print(
-    "[bold #715EFF] Freaky : [/bold #715EFF] [#FFFF00]Huff... Sob... Huff.. why sniff.. why he beat me like this sniff.. ah! Ugh! My leg still hurts, did i do crime or sin? I wasn't even sleeping outside sob.. Huff... his shop I was on the other side of the road sniff.. i will surely punish him in future ughh!! But what should I do now?"
+    "[bold #715EFF] Freaky : [/bold #715EFF] [#E79700]Huff... Sob... Huff.. why sniff.. why he beat me like this sniff.. ah! Ugh! My leg still hurts, did i do crime or sin? I wasn't even sleeping outside sob.. Huff... his shop I was on the other side of the road sniff.. i will surely punish him in future ughh!! But what should I do now?[/#E79700]"
 )
 dim()
-C1 = console.input("[#FFFF00] 1. drink water[/#FFFF00]\n[#FFFF00] 2. eat food[#FFFF00]\t\t\t")
+C1 = console.input("[#E79700] 1. drink water[/#E79700]\n[#E79700] 2. eat food[#E79700]\t\t\t")
 
 if C1 == "1":
     console.print(
-        "[#FFFF00] Yeah I should drink some water from river then should rest [#FFFF00]"
+        "[#E79700] Yeah I should drink some water from river then should rest [#E79700]"
     )
 elif C1 == "2":
-    console.print("[#FFFF00] result : how can I even think that I have nothing to eat maybe I should try my luck and start begging or do something for my thrust first [/#FFFF00]")
+    console.print("[#E79700] result : how can I even think that I have nothing to eat maybe I should try my luck and start begging or do something for my thrust first [/#E79700]")
     beg()
 dim()
 console.print(
@@ -129,7 +129,7 @@ console.print(
 )
 dim()
 console.print(
-    "[#715EFF]Freaky :[/#715EFF] [#FFFF00]hmm... my leg is not hurting anymore and my anger is also vanished, so now as I thought about the incident happened with that fat man in the market I think maybe there is also some fault of mine, if I were in his place maybe I would also have... hmm... no... beating a kid is still not right but I think I should not hold a grudge against him on such a small thing like this and I should forgive him hmm...[/#FFFF00]"
+    "[#715EFF]Freaky :[/#715EFF] [#E79700]hmm... my leg is not hurting anymore and my anger is also vanished, so now as I thought about the incident happened with that fat man in the market I think maybe there is also some fault of mine, if I were in his place maybe I would also have... hmm... no... beating a kid is still not right but I think I should not hold a grudge against him on such a small thing like this and I should forgive him hmm...[/#E79700]"
 )
 dim()
 console.print(
@@ -137,7 +137,7 @@ console.print(
 )
 dim()
 console.print(
-    "[#715EFF]Freaky :[/#715EFF][#FFFF00] yes I forgive him for this[#FFFF00]"
+    "[#715EFF]Freaky :[/#715EFF][#E79700] yes I forgive him for this[#E79700]"
 )
 dim()
 #scene 4
@@ -156,8 +156,8 @@ console.print(
 )
 dim()
 console.print(
-    """[#715EFF]Freaky :[/#715EFF] [#FFFF00]hmm... I think this all started because of that old drunk head if he hadn't made me run, i wouldn't be sleeping on roadside in front of that fruit shop and got beaten by that fat man it's all that old man's fault, well when I found that place  underneath the bridge I was so happy, I spent two weeks of peaceful nights there and then one day suddenly that old man came and said that this place belonged to him and I should get out of his place and forcefully took my watch and my hat and then beaten me till I ran away from there...
-    Hm.. yeah I guess maybe that place was really his and while he was gone I came there and thought tha- ... That I finally found a home a real home... Hm nevermind but still he stole my watch and hat and I have to take them back but later, currently I have to think about food[/#FFFF00]"""
+    """[#715EFF]Freaky :[/#715EFF] [#E79700]hmm... I think this all started because of that old drunk head if he hadn't made me run, i wouldn't be sleeping on roadside in front of that fruit shop and got beaten by that fat man it's all that old man's fault, well when I found that place  underneath the bridge I was so happy, I spent two weeks of peaceful nights there and then one day suddenly that old man came and said that this place belonged to him and I should get out of his place and forcefully took my watch and my hat and then beaten me till I ran away from there...
+    Hm.. yeah I guess maybe that place was really his and while he was gone I came there and thought tha- ... That I finally found a home a real home... Hm nevermind but still he stole my watch and hat and I have to take them back but later, currently I have to think about food[/#E79700]"""
 )
 dim()
 # start of scene 5
@@ -175,6 +175,6 @@ console.print(
 )
 dim()
 console.print(
-    """[#715EFF]Freaky :[/#715EFF] [#FFFF00]hm.. what am I gonna do next begging is almost worthless this city is full of heartless souls, maybe if I were only a little bit cute and not have a face like a ugly mug then I think people would spare something more often, well so I have to think of something else hm if people would hire me for labour or house help then my life would have been like heaven but why would someone will hire a frail kid like me, so maybe... I can look for some adventurer quest I know it pays very less wages and I can't even do the hard more paying quest like hunting but seeing my luck in begging this is a far better option[/#FFFF00]"""
+    """[#715EFF]Freaky :[/#715EFF] [#E79700]hm.. what am I gonna do next begging is almost worthless this city is full of heartless souls, maybe if I were only a little bit cute and not have a face like a ugly mug then I think people would spare something more often, well so I have to think of something else hm if people would hire me for labour or house help then my life would have been like heaven but why would someone will hire a frail kid like me, so maybe... I can look for some adventurer quest I know it pays very less wages and I can't even do the hard more paying quest like hunting but seeing my luck in begging this is a far better option[/#E79700]"""
 )
 dim()
