@@ -178,3 +178,60 @@ console.print(
     """[#715EFF]Freaky :[/#715EFF] [#E79700]hm.. what am I gonna do next begging is almost worthless this city is full of heartless souls, maybe if I were only a little bit cute and not have a face like a ugly mug then I think people would spare something more often, well so I have to think of something else hm if people would hire me for labour or house help then my life would have been like heaven but why would someone will hire a frail kid like me, so maybe... I can look for some adventurer quest I know it pays very less wages and I can't even do the hard more paying quest like hunting but seeing my luck in begging this is a far better option[/#E79700]"""
 )
 dim()
+
+# start of scene 6
+scene6 = Panel(
+    "[#E6E6E6 on #FFFF00] Scene 6 [/#E6E6E6 on #FFFF00]",
+    expand=False,
+    border_style="cyan"
+)
+
+scene6a = Align.center(scene6)
+console.print(scene6a)
+
+console.print(
+    "[#E6E6E6]After deciding to do it you stand up and went to old adventurer guild, after arriving outside of it you, freaky said.-[/#E6E6E6]"
+)
+
+console.print(
+    "[#715EFF]Freaky :[/#715EFF] [#E79700]I have to do it.[/#E79700]"
+)
+
+console.print(
+    "[#E6E6E6]Then you enter inside and the first thing you saw was the emptiness, there was no one except the counter staff, he was a skinny and tired by seeing him you thought.[/#E6E6E6]"
+)
+
+console.print(
+    "[#715EFF]Freaky's thought :[/#715EFF] [#E79700]that person looks very scary and lifeless but I have to focus on my work.[/#E79700]"
+)
+
+console.print(
+    "[#E6E6E6]Then you looked for the quest board yourself and you found it on the left wall and then you choose.-[/#E6E6E6]"
+)
+
+board = Panel(
+    "[#E79700]1. Hunt three wild boars - 13 coins\n2. Chop 15 medium sized ockle wood - 10 coins\n3. Gather a bunch of red marin flower - 2.50 coins[/#E79700]",
+    title="[bold #E79700]Quest Board[/bold #E79700]",
+)
+
+console.print(board)
+
+int5 = console.input(
+    "[#E6E6E6]select one of quest from number of quest for eg 1 for 1st quest"
+)
+
+while True:
+    if int5 == "1":
+        console.print("[#E6E6E6]killing three wild boars with my bare hands and am I crazy to even think that.[/#E6E6E6]")
+    elif int5 == "2":
+        console.print("[#E6E6E6]hmm I could do that if I have an axe but I didn't have one so I can't.[/#E6E6E6]")
+    elif int5 == "3":
+        console.print("[#E6E6E6]huh, this is something I can do,I know it will take time and wage is also low but it's the only thing I can do currently that guarantees money.[/#E6E6E6]")
+        break
+    else:
+        int5 = console.input(
+            "[red]Invalid choice. Select one of the quests (1, 2, or 3):[/red]"
+        )
+
+
+# start of scene 7

@@ -16,4 +16,3 @@ ENV PYTHONUNBUFFERED=1
 
 EXPOSE 8080
 CMD ["ttyd", "-p", "8080", "-W", "-t", "fontSize=20", "python", "-u", "scrap_detective1.py"]
-
