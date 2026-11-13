@@ -233,5 +233,5 @@ while True:
             "[red]Invalid choice. Select one of the quests (1, 2, or 3):[/red]"
         )
 
-
+#end of scene 6
 # start of scene 7
