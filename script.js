@@ -2,7 +2,7 @@
 const GAME = "Scrap Detective";
 const GAME_URL = "https://scarp-detective.onrender.com/";
 const FORM_URL = "https://xy.com"; // <- put your Google Form link here
-const RELEASE_DATE = null;         // e.g. "2027-03-01T00:00:00" — null shows "TBA"
+const RELEASE_DATE = "2026-11-22T11:00:00";         // e.g. "2027-03-01T00:00:00" — null shows "TBA"
 const EULA_VERSION = "v1";         // bump to re-prompt everyone
 
 const PAGES = [
