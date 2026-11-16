@@ -9,7 +9,11 @@ console = Console()
 time.sleep(1)
 
 inventory = []
-money = [0]
+money = [0.0]        # mable coins (the only currency in the game)
+flags = {
+    "considered_murder": False,   # Scene 10: picked the "throw a stone" option first
+    "tempted_by_locket": False,   # Scene 10: picked "take the locket" option first
+}
 
 
 def dim():
@@ -26,20 +30,20 @@ def beg():
     elif Luck <= 100:
         Luck2 = random.randint(1, 100)
         if Luck2 <= 55:
-            console.print("[#FFFF00] You get 1 cent [#FFFF00]")
-            money[0] += 1
+            console.print("[#FFFF00] You get 0.01 mable coins [#FFFF00]")
+            money[0] += 0.01
         elif Luck2 <= 63:
             console.print("[#FFFF00] You get a piece of bread [#FFFF00]")
             inventory.append("bread")
         elif Luck2 <= 65:
-            console.print("[#FFFF00] You get 3 cents [#FFFF00]")
-            money[0] += 3
+            console.print("[#FFFF00] You get 0.03 mable coins [#FFFF00]")
+            money[0] += 0.03
         elif Luck2 <= 67:
-            console.print("[#FFFF00] You get 4 cents [#FFFF00]")
-            money[0] += 4
+            console.print("[#FFFF00] You get 0.04 mable coins [#FFFF00]")
+            money[0] += 0.04
         elif Luck2 <= 100:
-            console.print("[#FFFF00] You get 2 cents [#FFFF00]")
-            money[0] += 2
+            console.print("[#FFFF00] You get 0.02 mable coins [#FFFF00]")
+            money[0] += 0.02
 
 
 def introduction():
@@ -272,7 +276,7 @@ def scene7():
     )
     dim()
     console.print(
-        "[#715EFF]Freaky :[/#715EFF] [#E79700]that person looks scary and tired I think he really hates his job, well as far as I heard these red flowers are found in the left forest, it's a bit tiring going to other side of city[/#E79700]"
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]that person looks scary and tired I think he really hates his job, well as far as I heard these red flowers are found in the west will forest, it's a bit tiring going to other side of city[/#E79700]"
     )
     dim()
     console.print(
@@ -304,7 +308,7 @@ def scene7():
     )
     dim()
     console.print(
-        "[#715EFF]Freaky :[/#715EFF] [#E79700]I heard that near the left forest there are lot of red flowers, but from here I can't see any so can you tell me which direction should I go[/#E79700]"
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]I heard that near the west will forest there are lot of red flowers, but from here I can't see any so can you tell me which direction should I go[/#E79700]"
     )
     dim()
     console.print(
@@ -454,6 +458,351 @@ def scene8():
     )
     dim()
 
+def banner(n):
+    console.print(Align.center(Panel(
+        f"[#E6E6E6 on #FFFF00] Scene {n} [/#E6E6E6 on #FFFF00]",
+        expand=False,
+        border_style="cyan"
+    )))
+
+
+def scene9():
+    banner(9)
+
+    console.print(
+        "[#E6E6E6]Excitedly you opened the door and saw the emptiness of that place again, the dreadfulness and the silence, but this time it didn't bother you that much. So you went straight to the counter and said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]hello, sir[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]You, Freaky, see the same person at the counter that you saw before. He ignored you, maybe because he was deep in a book, or because he didn't want to reply.[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]hello sir, I'm here[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]He finally spoke, in a dreadful and unpleasant voice.[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]augh! I was reading an interesting part but you broke my focus[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]um, sorry for that[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]huf, well now that you've already broken my focus, tell me fast[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]well, I came here for that flower quest, I've completed it[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]hm, ok. You see that basket in the left corner? Put those flowers in it[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]You did as he said. After putting the flowers in the basket you put your shirt back on, turned around, went to the counter and said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]sir, I completed the quest, so can you give me my reward please[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]He looked at you for a second, then took money from the drawer under the table and placed it on the counter. You looked at the money. It was just 0.50 mable coins. Seeing this, you said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#E79700]1. Sir, there is some mistake, my original reward is 2.50 mable coins\n2. Sir, my reward is 2.50 mable[/#E79700]"
+    )
+    s9a = console.input(
+        "[dim] Select 1 or 2[/dim]\t"
+    )
+    while True:
+        if s9a == "1":
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]sir, there is some mistake, my original reward is 2.50 mable coins[/#E79700]"
+            )
+            break
+        elif s9a == "2":
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]sir, my reward is 2.50 mable[/#E79700]"
+            )
+            break
+        else:
+            console.print(
+                "[red]error select again[/red]"
+            )
+            s9a = console.input(
+                "[dim] Select 1 or 2[/dim]\t"
+            )
+    dim()
+    console.print(
+        "[#E6E6E6]After hearing this he slapped you angrily and, with a scary expression, he said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]what did you say, you damn thin pig?! You should be grateful that I even gave you a reward[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]You cried and said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]but sir, I've really worked hard for this, please have mercy, I beg you[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]With that same scary expression he said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]you are so stubborn, thin pig. Ok, listen: if you were not a helpless little boy I wouldn't even have given you those 0.50 mable. You know why? [/#E79700][bold](then he shouted)[/bold] [#E79700]You don't have! Fucking!! Guild permit!![/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]You got a little confused because you didn't know anything about a guild permit, and in a crying voice you said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#E79700]1. What is this guild permit? Sir\n2. How can I get this? Sir[/#E79700]"
+    )
+    s9b = console.input(
+        "[dim] Select 1 or 2[/dim]\t"
+    )
+    while True:
+        if s9b == "1":
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]what is this guild permit? Sir[/#E79700]"
+            )
+            dim()
+            console.print(
+                "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]are you dumb? You can't understand that without this permit you can't receive a reward after completing a quest? And if you want it, you have to pay the guild 1000 Synth coins[/#E79700]"
+            )
+            break
+        elif s9b == "2":
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]how can I get this? Sir[/#E79700]"
+            )
+            dim()
+            console.print(
+                "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]how can you get this? Ok, listen closely, I will only tell you once: by paying the guild 1000 Synth coins![/#E79700]"
+            )
+            break
+        else:
+            console.print(
+                "[red]error select again[/red]"
+            )
+            s9b = console.input(
+                "[dim] Select 1 or 2[/dim]\t"
+            )
+    dim()
+    console.print(
+        "[bold #C46A6A]Counter staff :[/bold #C46A6A] [#E79700]now go away, I want to read this book in peace[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]After hearing all this, your hope turned into despair. You cried and said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]ok, have a good day sir[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]Then you took the money from the table and ran away in tears.[/#E6E6E6]"
+    )
+    money[0] += 0.50
+    console.print(
+        "[bold #E79700]+0.50 mable coins[/bold #E79700]"
+    )
+    dim()
+
+
+def scene10():
+    banner(10)
+
+    console.print(
+        "[#E6E6E6]After coming out of the guild you, Freaky, ran straight for a while. Out of breath, you stopped near the old bridge and said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]sob.. sob.. Huff.. I'm... hungry sob.. Huff.. I have.. sob.. no time to complain Huff.. about my situation sob.. now I have to.. huf.. depend on my luck and start begging again sob..[/#E79700]"
+    )
+    dim()
+
+    # Scripted begging: the first three tries always fail, the fourth always succeeds
+    attempt = 0
+    while attempt < 4:
+        b10 = console.input(
+            "[#FFFF00]1. Beg[/#FFFF00]\t"
+        )
+        if b10 != "1":
+            console.print(
+                "[red]error select again[/red]"
+            )
+            continue
+        attempt += 1
+        if attempt == 1:
+            console.print(
+                "[#FFFF00] Nobody even looked at me... I should try again [/#FFFF00]"
+            )
+        elif attempt == 2:
+            console.print(
+                "[#FFFF00] A woman crossed the street just to avoid me... again [/#FFFF00]"
+            )
+        elif attempt == 3:
+            console.print(
+                "[#FFFF00] Someone muttered 'get a job' and walked past... one more time [/#FFFF00]"
+            )
+        else:
+            console.print(
+                "[#FFFF00] Someone dropped a coin in front of you. You get 0.50 mable coins [/#FFFF00]"
+            )
+            money[0] += 0.50
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]oh finally, now I have enough money to buy bread[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]After that you, Freaky, went to the bakery where you saw the owner. You went to him and said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]I want a bread[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[bold #FFA500]Bakery owner :[/bold #FFA500] [#E79700]and do you have money?[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]Then you took out your money and gave it to him. He gave you a bread.[/#E6E6E6]"
+    )
+    money[0] -= 1.00
+    inventory.append("bread")
+    console.print(
+        "[bold #E79700]-1.00 mable coins, +1 bread[/bold #E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]You took it and went straight to the old bridge. When you arrived there, you sat down beside the river and ate your bread, then said.-[/#E6E6E6]"
+    )
+    inventory.remove("bread")
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]if I think about the whole situation now, I think what that scary guy said was right. According to the rules it was illegal to even give me those 0.50 mable, and the only thing he did wrong was slapping me. If I had known this rule I wouldn't have asked for the full reward. I think I can forgive him this time, because he showed kindness by giving me those 0.50 mable coins.[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]You rested there for a while, then stood up and went to the market and begged for hours, but nobody gave you anything. After the sun went down and night came, people started closing their shops. You were tired and decided to leave. When you arrived near the old bridge you said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]I think this is the right time, I should check if the drunk old beggar...[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]Then you went to the inner side of the bridge and saw the old beggar sleeping. Seeing him, you said.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky :[/#715EFF] [#E79700]ok, this is the right time, I should...[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E79700]1. Find a big stone and throw it on his head, and take my belongings\n2. Walk silently towards him and carefully check his pockets[/#E79700]"
+    )
+    s10a = console.input(
+        "[dim] Select 1 or 2[/dim]\t"
+    )
+    while True:
+        if s10a == "1":
+            flags["considered_murder"] = True
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]how did this thought even come to my mind? How can I think to murder someone? I think it's better to silently walk towards him and check his pockets[/#E79700]"
+            )
+            break
+        elif s10a == "2":
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]yeah, this seems right[/#E79700]"
+            )
+            break
+        else:
+            console.print(
+                "[red]error select again[/red]"
+            )
+            s10a = console.input(
+                "[dim] Select 1 or 2[/dim]\t"
+            )
+    dim()
+    console.print(
+        "[#E6E6E6]Then you walked towards him carefully, without making any noise. After getting close to him you carefully started checking his pockets, but suddenly.-[/#E6E6E6]"
+    )
+    dim()
+    console.print(
+        "[bold #3c9d2a]Drunk old beggar :[/bold #3c9d2a] [#E79700]hghwa.. where's my beer... Hghwawa..[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky's thoughts :[/#715EFF] [#E79700]oh God! I thought he was going to wake up. I should do this more carefully[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E6E6E6]After some tries you found three items. The first was your pocket watch, the second was your hat, and the third was a locket with a photo of a woman in it. When you found it you thought.-[/#E6E6E6]"
+    )
+    inventory.append("pocket watch")
+    inventory.append("hat")
+    console.print(
+        "[bold #E79700]+ pocket watch, + hat[/bold #E79700]"
+    )
+    dim()
+    console.print(
+        "[#715EFF]Freaky's thoughts :[/#715EFF] [#E79700]hmm, this locket seems a bit important to him...[/#E79700]"
+    )
+    dim()
+    console.print(
+        "[#E79700]1. I should take this locket as his punishment\n2. No, I can't steal it, it's important to him[/#E79700]"
+    )
+    s10b = console.input(
+        "[dim] Select 1 or 2[/dim]\t"
+    )
+    while True:
+        if s10b == "1":
+            flags["tempted_by_locket"] = True
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]no, what am I thinking? If I do this, then what will be the difference between him and me[/#E79700]"
+            )
+            break
+        elif s10b == "2":
+            console.print(
+                "[#715EFF]Freaky :[/#715EFF] [#E79700]yeah, I should leave it[/#E79700]"
+            )
+            break
+        else:
+            console.print(
+                "[red]error select again[/red]"
+            )
+            s10b = console.input(
+                "[dim] Select 1 or 2[/dim]\t"
+            )
+    dim()
+    console.print(
+        "[#E6E6E6]Then, without making any noise, you got out of there to find a new place to sleep.[/#E6E6E6]"
+    )
+    dim()
+
 
 # Game Execution Flow
 if __name__ == "__main__":
@@ -466,3 +815,6 @@ if __name__ == "__main__":
     scene6()
     scene7()
     scene8()
+    scene9()
+    scene10()
+# V1 end
