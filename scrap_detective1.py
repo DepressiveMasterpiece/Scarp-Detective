@@ -239,10 +239,8 @@ def scene6():
     while True:
         if int5 == "1":
             console.print("[#E6E6E6]killing three wild boars with my bare hands and am I crazy to even think that.[/#E6E6E6]")
-            break
         elif int5 == "2":
             console.print("[#E6E6E6]hmm I could do that if I have an axe but I didn't have one so I can't.[/#E6E6E6]")
-            break
         elif int5 == "3":
             console.print("[#E6E6E6]huh, this is something I can do,I know it will take time and wage is also low but it's the only thing I can do currently that guarantees money.[/#E6E6E6]")
             break
